@@ -1,0 +1,22 @@
+{
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": [
+        "d:\\College\\Interopabilitas\\Worksheet\\library\\activation.jar",
+        "d:\\College\\Interopabilitas\\Worksheet\\library\\commons-codec.jar",
+        "d:\\College\\Interopabilitas\\Worksheet\\library\\commons-fileupload.jar",
+        "d:\\College\\Interopabilitas\\Worksheet\\library\\commons-io.jar",
+        "d:\\College\\Interopabilitas\\Worksheet\\library\\commons-logging.jar",
+        "d:\\College\\Interopabilitas\\Worksheet\\library\\commons-net.jar",
+        "d:\\College\\Interopabilitas\\Worksheet\\library\\helma.jar",
+        "d:\\College\\Interopabilitas\\Worksheet\\library\\jetty.jar",
+        "d:\\College\\Interopabilitas\\Worksheet\\library\\jetty-ajp.jar",
+        "d:\\College\\Interopabilitas\\Worksheet\\library\\jetty-util.jar",
+        "d:\\College\\Interopabilitas\\Worksheet\\library\\mail.jar",
+        "d:\\College\\Interopabilitas\\Worksheet\\library\\rhino.jar",
+        "d:\\College\\Interopabilitas\\Worksheet\\library\\servlet.jar",
+        "d:\\College\\Interopabilitas\\Worksheet\\library\\tagsoup.jar",
+        "d:\\College\\Interopabilitas\\Worksheet\\library\\xmlrpc.jar"
+    ]
+}

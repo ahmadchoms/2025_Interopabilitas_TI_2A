@@ -6,7 +6,6 @@ console.log("WebSocket server started on port 3000");
 wss.on("connection", (ws) => {
   console.log("✅ A new client has connected.");
 
-  // Kirim pesan sambutan ke client baru
   const welcomeMessage = JSON.stringify({
     from: "server",
     message: "Selamat datang! Kamu telah terhubung ke server chat.",
@@ -43,7 +42,6 @@ wss.on("connection", (ws) => {
 
     console.log(`💬 ${from}: ${message}`);
 
-    // Broadcast ke semua client termasuk pengirim
     wss.clients.forEach((client) => {
       if (client.readyState === WebSocket.OPEN) {
         client.send(JSON.stringify({ from, message }));

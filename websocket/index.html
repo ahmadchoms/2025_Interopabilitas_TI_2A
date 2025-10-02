@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Client</title>
+</head>
+<body>
+    <h2>Client WebSocket</h2>
+    <input type="text" id="message" placeholder="Ketikan pesan...">
+    <button onclick="sendMessage()">Kirim</button>
+    <ul id="chat"></ul>
+
+    <script>
+        const ws = new WebSocket('ws://localhost:3000');
+        const chatBox = document.getElementById('chat');
+
+        ws.onopen = () => {
+            addMessage('✅ Terhubung ke server WebSocket');
+        }
+
+        ws.onmessage = () => {
+            addMessage('💌' + event.data);
+        }
+
+        function sendMessage() {
+            const msg = document.getElementById('message').value;
+            if (msg) {
+                ws.send(msg)
+                addMessage('💌' + msg);
+                document.getElementById('message').value = '';
+            }
+        }
+
+        function addMessage(msg) {
+            const li = document.createElement('li');
+            li.textContent = msg;
+            chatBox.appendChild(li);
+        }
+    </script>
+</body>
+</html>
